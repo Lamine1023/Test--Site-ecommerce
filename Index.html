@@ -1,36 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Women's Fashion Store</title>
+  <title>Vêtements pour Femmes - Boutique Mode</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- En-tête -->
   <header>
-    <h1>Women's Fashion</h1>
+    <div class="header-top">
+      <h1>Boutique Mode</h1>
+      <input type="text" id="search-bar" placeholder="Rechercher un produit...">
+    </div>
     <nav>
-      <a href="#products">Shop</a>
-      <a href="#about">About</a>
+      <ul class="menu">
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#categories">Catégories</a></li>
+        <li><a href="#promotions">Promotions</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">À propos</a></li>
+      </ul>
     </nav>
   </header>
 
-  <section id="products">
-    <h2>Our Products</h2>
-    <div class="product">
-      <img src="dress.jpg" alt="Red Dress">
-      <h3>Red Dress</h3>
-      <p>$50</p>
-      <button>Add to Cart</button>
+  <!-- Section des catégories -->
+  <section id="categories">
+    <h2>Nos Catégories</h2>
+    <div class="categories">
+      <div class="category">
+        <img src="robes.jpg" alt="Robes">
+        <h3>Robes</h3>
+      </div>
+      <div class="category">
+        <img src="vestes.jpg" alt="Vestes">
+        <h3>Vestes</h3>
+      </div>
+      <div class="category">
+        <img src="chaussures.jpg" alt="Chaussures">
+        <h3>Chaussures</h3>
+      </div>
+      <div class="category">
+        <img src="accessoires.jpg" alt="Accessoires">
+        <h3>Accessoires</h3>
+      </div>
     </div>
   </section>
 
+  <!-- Section des produits -->
+  <section id="products">
+    <h2>Nos Produits</h2>
+    <div class="product-list">
+      <!-- Les produits seront ajoutés dynamiquement via JavaScript -->
+    </div>
+  </section>
+
+  <!-- Pied de page -->
   <footer>
-    <p>Follow us on 
-      <a href="https://www.facebook.com">Facebook</a> and 
-      <a href="https://www.instagram.com">Instagram</a>.
-    </p>
+    <div class="footer-info">
+      <p>&copy; 2024 Boutique Mode. Tous droits réservés.</p>
+      <p><a href="#terms">Conditions Générales</a> | <a href="#privacy">Politique de Confidentialité</a></p>
+    </div>
+    <div class="footer-socials">
+      <a href="https://facebook.com">Facebook</a> | 
+      <a href="https://instagram.com">Instagram</a> | 
+      <a href="https://twitter.com">Twitter</a>
+    </div>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
