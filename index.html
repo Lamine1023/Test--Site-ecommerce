@@ -1,71 +1,59 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vêtements pour Femmes - Boutique Mode</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>ZINA BOUTIQUE</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- En-tête -->
-  <header>
-    <div class="header-top">
-      <h1>Boutique Mode</h1>
-      <input type="text" id="search-bar" placeholder="Rechercher un produit...">
-    </div>
-    <nav>
-      <ul class="menu">
-        <li><a href="#home">Accueil</a></li>
-        <li><a href="#categories">Catégories</a></li>
-        <li><a href="#promotions">Promotions</a></li>
+  <header class="header">
+    <div class="logo">ZINA BOUTIQUE</div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#shop">Shop</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">À propos</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Section des catégories -->
-  <section id="categories">
-    <h2>Nos Catégories</h2>
-    <div class="categories">
-      <div class="category">
-        <img src="robes.jpg" alt="Robes">
-        <h3>Robes</h3>
+  <section class="hero" id="home">
+    <h1>Welcome to ZINA BOUTIQUE</h1>
+    <p>Discover elegance and sophistication in every piece.</p>
+    <a href="#shop" class="btn">Shop Now</a>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>ZINA BOUTIQUE is your go-to destination for chic and elegant fashion.</p>
+  </section>
+
+  <section id="shop" class="shop">
+    <h2>Our Collection</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200" alt="Product 1">
+        <h3>Product 1</h3>
+        <p>$50</p>
       </div>
-      <div class="category">
-        <img src="vestes.jpg" alt="Vestes">
-        <h3>Vestes</h3>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200" alt="Product 2">
+        <h3>Product 2</h3>
+        <p>$70</p>
       </div>
-      <div class="category">
-        <img src="chaussures.jpg" alt="Chaussures">
-        <h3>Chaussures</h3>
-      </div>
-      <div class="category">
-        <img src="accessoires.jpg" alt="Accessoires">
-        <h3>Accessoires</h3>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200" alt="Product 3">
+        <h3>Product 3</h3>
+        <p>$90</p>
       </div>
     </div>
   </section>
 
-  <!-- Section des produits -->
-  <section id="products">
-    <h2>Nos Produits</h2>
-    <div class="product-list">
-      <!-- Les produits seront ajoutés dynamiquement via JavaScript -->
-    </div>
-  </section>
-
-  <!-- Pied de page -->
-  <footer>
-    <div class="footer-info">
-      <p>&copy; 2024 Boutique Mode. Tous droits réservés.</p>
-      <p><a href="#terms">Conditions Générales</a> | <a href="#privacy">Politique de Confidentialité</a></p>
-    </div>
-    <div class="footer-socials">
-      <a href="https://facebook.com">Facebook</a> | 
-      <a href="https://instagram.com">Instagram</a> | 
-      <a href="https://twitter.com">Twitter</a>
-    </div>
+  <footer class="footer">
+    <p>© 2024 ZINA BOUTIQUE. All rights reserved.</p>
+    <a href="#privacy">Privacy Policy</a> | <a href="#shipping">Shipping Info</a>
   </footer>
 
   <script src="script.js"></script>
