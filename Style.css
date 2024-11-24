@@ -1,82 +1,129 @@
-/* Style général */
-body {
-  font-family: Arial, sans-serif;
+/* Reset */
+* {
   margin: 0;
   padding: 0;
-  background-color: #fff8e1;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #fdfdfd;
   color: #333;
 }
 
-/* En-tête */
+/* Header */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #d4af37;
+  background-color: #1e1e2f;
   color: white;
 }
 
-.logo {
-  font-size: 1.5rem;
+.header .logo {
+  font-size: 1.8rem;
   font-weight: bold;
 }
 
 .nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
+  list-style: none;
 }
 
 .nav ul li {
-  margin: 0 1rem;
+  margin-left: 1.5rem;
 }
 
 .nav ul li a {
-  text-decoration: none;
   color: white;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
-/* Section héroïque */
+.nav ul li a:hover {
+  color: #d4af37;
+}
+
+/* Hero section */
 .hero {
-  text-align: center;
-  padding: 5rem 2rem;
-  background: url('https://via.placeholder.com/1200x600') no-repeat center center/cover;
+  height: 90vh;
+  background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
+  text-align: center;
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
 }
 
 .hero .btn {
+  display: inline-block;
   margin-top: 1rem;
   padding: 0.8rem 2rem;
-  background-color: #333;
+  background-color: #d4af37;
   color: white;
   text-decoration: none;
   border-radius: 5px;
+  font-size: 1.2rem;
 }
 
-/* Section shop */
-.shop {
+.hero .btn:hover {
+  background-color: #b0892f;
+}
+
+/* About section */
+.about {
   padding: 2rem;
   text-align: center;
 }
 
+.about h2 {
+  font-size: 2.5rem;
+  color: #1e1e2f;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  margin-bottom: 1rem;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Shop section */
+.shop {
+  padding: 2rem;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.shop h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
 .products {
   display: flex;
-  justify-content: center;
   gap: 2rem;
+  justify-content: center;
 }
 
 .product-card {
-  background: white;
-  padding: 1rem;
-  border: 1px solid #ccc;
+  background-color: white;
+  border: 1px solid #ddd;
   border-radius: 8px;
-  width: 200px;
+  padding: 1rem;
+  width: 250px;
+  text-align: center;
 }
 
 .product-card img {
@@ -85,13 +132,47 @@ body {
 }
 
 .product-card h3 {
+  font-size: 1.2rem;
   margin: 0.5rem 0;
 }
 
-/* Pied de page */
-.footer {
-  text-align: center;
-  padding: 1rem;
+.product-card p {
+  color: #d4af37;
+  font-weight: bold;
+}
+
+.btn-small {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
   background-color: #d4af37;
   color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn-small:hover {
+  background-color: #b0892f;
+}
+
+/* Footer */
+.footer {
+  background-color: #1e1e2f;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0;
+}
+
+.footer ul li a {
+  color: #d4af37;
+  text-decoration: none;
 }
