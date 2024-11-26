@@ -31,11 +31,14 @@ nav ul li a {
     text-decoration: none;
 }
 
-.hero {
-    background: url('https://via.placeholder.com/1200x600?text=Fashion+Banner') no-repeat center center/cover;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 100px 0;
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin: 10px 0;
 }
 
 .hero .btn {
@@ -45,6 +48,13 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
+    border: 2px solid #FF6F61;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #FF6F61;
+    color: #FFFFFF;
 }
 
 .products {
@@ -53,19 +63,18 @@ nav ul li a {
 }
 
 .product-grid {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
 }
-
-.product-card {
-    background-color: #FFFFFF;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin: 10px;
-    width: 300px;
-    padding: 20px;
-    text-align: center;
+.product-card { 
+    background-color: #FFFFFF; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    padding: 20px; 
+    width: calc(33.333% - 40px); 
+    box-sizing: border-box; 
 }
 
 .product-card img {
